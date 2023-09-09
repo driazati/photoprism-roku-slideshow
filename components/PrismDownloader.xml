@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="PrismDownloader" extends="Task">
+  <interface>
+    <field id="status" type="string" value="none" />
+    <field id="data" type="assocarray" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/Registry.brs" />
+  <script type="text/brightscript" uri="pkg:/components/prism.brs" />
+  <script type="text/brightscript" uri="pkg:/components/PrismDownloader.brs" />
+</component>

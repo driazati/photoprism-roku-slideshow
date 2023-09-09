@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component
+  name="CustomKeyboardDialog"
+  extends="StandardDialog"
+  initialFocus="buttonArea"
+>
+
+<interface>
+    <field id="value" type="string" value="none" />
+    <field id="status" type="string" value="none" />
+    <field id="kbItem" type="node" />
+</interface>
+
+<script
+    type="text/brightscript"
+    uri="pkg:/components/CustomKeyboardDialog.brs"
+  />
+
+<children>
+  <StdDlgTitleArea primaryTitle="Keyboard Dialog Example" />
+  <StdDlgContentArea>
+     <StdDlgKeyboardItem id="kbItem" keyLayoutType="keyboard" />
+  </StdDlgContentArea>
+  <StdDlgButtonArea id="buttonArea">
+    <StdDlgButton text="OK" />
+    <StdDlgButton text="Cancel" />
+  </StdDlgButtonArea>
+</children>
+
+</component>
