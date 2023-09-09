@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="Options" extends="Group">
+  <interface>
+    <field id="status" type="string" />
+  </interface>
+  <children>
+  <LayoutGroup id="group" layoutDirection="vert" horizAlignment="left" translation="[100, 100]" itemSpacings="0">
+      <Label id="itemText" text="PhotoPrism Host IP" />
+      <TextEditBox
+        id="HostInput"
+        width="780"
+        clearOnDownKey="false"
+        active="true"
+        hintText="http://prism.example.com"
+      />
+      <Label id="item2Text" text="Username" />
+      <TextEditBox
+        id="UsernameInput"
+        width="780"
+        clearOnDownKey="false"
+        hintText="admin"
+      />
+      <Label id="item2Text" text="Password" />
+      <TextEditBox
+        id="PasswordInput"
+        width="780"
+        clearOnDownKey="false"
+        hintText="mypassword"
+      />
+      <Label id="item2Text" text="Interval Between Photos (seconds)" />
+      <TextEditBox
+        id="IntervalSecondsInput"
+        width="780"
+        clearOnDownKey="false"
+        hintText="8"
+      />
+      <Button
+        id="CheckConnectionButton"
+        text="Check Connection"
+        showFocusFootprint="true"
+        minWidth="240"
+        iconUri = ""
+        focusedIconUri = ""
+      />
+      <Button
+        id="SaveButton"
+        text="Save"
+        showFocusFootprint="true"
+        minWidth="120"
+        iconUri = ""
+        focusedIconUri = ""
+      />
+      <Button
+        id="BackButton"
+        text="Go to Photo Slideshow"
+        showFocusFootprint="true"
+        minWidth="120"
+        iconUri = ""
+        focusedIconUri = ""
+      />
+      <Label id="ConnectionStatus" text="" />
+  </LayoutGroup>
+  <PrismChecker id="PrismChecker" />
+
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/Registry.brs" />
+  <script type="text/brightscript" uri="pkg:/components/Options.brs" />
+</component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="SlideShow" extends="Group">
+  <children>
+
+  <Rectangle
+      id="BackgroundRectangle"
+      color="0x000000FF"
+      width="1920"
+      height="1080"
+      translation="[0,0]"
+    />
+
+
+    <PrismDownloader id="PrismDownloader" />
+
+    <Label
+      id="Loading"
+      text="Loading (press * for options)..."
+      height="1080"
+      width="1920"
+      horizAlign="center"
+      vertAlign="center"
+    />
+
+    <Poster id="Image" width="0.0" height="0.0" translation="[0,0]" />
+
+    <Label
+      id="buildid"
+      height="1080"
+      width="1920"
+      text="pfmbr"
+      horizAlign="right"
+      vertAlign="bottom"
+      color="0x00000000"
+    />
+  </children>
+
+  <script type="text/brightscript" uri="pkg:/components/math_utils.brs" />
+  <script type="text/brightscript" uri="pkg:/components/SlideShow.brs" />
+</component>
